@@ -63,6 +63,14 @@ function upperCaseFirstLetters(arr) {
 function add1ToLeft(arr) {
   const newArr = [];
 
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i] > 0) {
+    newArr.push(Number(`1${arr[i]}`))
+  } else {
+    newArr.push(Number(`1${arr[i] * -1}` * -1))
+    }
+  }
+  return newArr;
 }
 
 
